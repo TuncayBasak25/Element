@@ -24,7 +24,7 @@ export class Element
 }
 
 import * as styles from './styles/styles';
-import { bgColors, textColors, borderColor } from './styles/colors';
+import { bgColors, textColors, borderColors } from './styles/colors';
 
 Object.entries(styles).map( ([name, func]) => Element.prototype[name] = func );
 
