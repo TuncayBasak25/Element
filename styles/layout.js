@@ -1,40 +1,31 @@
-export function fgrw(val) { this.element.style.flexGrow = val;   return this; }
-export function fshr(val) { this.element.style.flexShrink = val; return this; }
-export function fbas(val) { this.element.style.flexBasis = val;  return this; }
+export function dflex() { this.element.style.display = 'flex'; return this; }
+export function dblock() { this.element.style.display = 'block'; return this; }
+export function dinline() { this.element.style.display = 'inline'; return this; }
+export function dnone() { this.element.style.display = 'none'; return this; }
 
-export function flex(a, b, c) { this.element.style.flex = `${a} ${b} ${c}`; return this; }
+export function absolute() { this.element.style.position = 'absolute'; return this; }
+export function relative() { this.element.style.position = 'relative'; return this; }
 
-export function wrap() { this.element.style.flexWrap = 'wrap'; return this; }
-export function noWrap() { this.element.style.flexWrap = 'no-wrap'; return this; }
+export function top(val) { this.element.style.top = val + 'px'; return this; }
+export function right(val) { this.element.style.right = val + 'px'; return this; }
+export function left(val) { this.element.style.left = val + 'px'; return this; }
+export function bot(val) { this.element.style.bottom = val + 'px'; return this; }
 
-export function row() { this.element.style.flexDirection = 'row'; return this; }
-export function col() { this.element.style.flexDirection = 'column'; return this; }
-export function rowReverse() { this.element.style.flexDirection = 'row-reverse'; return this; }
-export function colReverse() { this.element.style.flexDirection = 'column-reverse'; return this; }
+export function floatLeft() { this.element.style.float = 'left'; return this; }
+export function floatRight() { this.element.style.float = 'right'; return this; }
 
-export function jcc()  { this.element.style.justifyContent = 'center'; return this; }
-export function jcb()  { this.element.style.justifyContent = 'space-between'; return this; }
-export function jca()  { this.element.style.justifyContent = 'space-around'; return this; }
-export function jce()  { this.element.style.justifyContent = 'space-evenly'; return this; }
-export function jcfs() { this.element.style.justifyContent = 'flex-start'; return this; }
-export function jcfe() { this.element.style.justifyContent = 'flex-end'; return this; }
+export function zIndex(val) { this.element.style.zIndex = val; return this; }
 
-export function aic()  { this.element.style.alignItems = 'center'; return this; }
-export function ais()  { this.element.style.alignItems = 'stretch'; return this; }
-export function aib()  { this.element.style.alignItems = 'baseline'; return this; }
-export function aifs() { this.element.style.alignItems = 'flex-start'; return this; }
-export function aife() { this.element.style.alignItems = 'flex-end'; return this; }
+export function overflowHidden() { this.style.element.overflow = 'hidden'; return this; }
+export function overflowVisible() { this.style.element.overflow = 'visible'; return this; }
+export function overflowScroll() { this.style.element.overflow = 'scroll'; return this; }
 
-export function asc()  { this.element.style.alignSelf = 'center'; return this; }
-export function ass()  { this.element.style.alignSelf = 'stretch'; return this; }
-export function asb()  { this.element.style.alignSelf = 'baseline'; return this; }
-export function asfs() { this.element.style.alignSelf = 'flex-start'; return this; }
-export function asfe() { this.element.style.alignSelf = 'flex-end'; return this; }
+export function overflowXHidden() { this.style.element.overflowX = 'hidden'; return this; }
+export function overflowXVisible() { this.style.element.overflowX = 'visible'; return this; }
+export function overflowXScroll() { this.style.element.overflowX = 'scroll'; return this; }
 
-export function acc()  { this.element.style.alignContent = 'center'; return this; }
-export function acs()  { this.element.style.alignContent = 'stretch'; return this; }
-export function acb()  { this.element.style.alignContent = 'baseline'; return this; }
-export function acfs() { this.element.style.alignContent = 'flex-start'; return this; }
-export function acfe() { this.element.style.alignContent = 'flex-end'; return this; }
+export function overflowYHidden() { this.style.element.overflowY = 'hidden'; return this; }
+export function overflowYVisible() { this.style.element.overflowY = 'visible'; return this; }
+export function overflowYScroll() { this.style.element.overflowY = 'scroll'; return this; }
 
-export function order(val) { this.element.style.order = val; return this; }
+export function resize(val) { this.style.element.resize = val; return this; }
